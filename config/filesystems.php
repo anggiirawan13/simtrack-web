@@ -74,4 +74,10 @@ return [
         public_path('storage') => storage_path('app/public'),
     ],
 
+    'logs' => [
+        'driver' => 'single',
+        'path' => sys_get_temp_dir(),
+    ],
+
+
 ];

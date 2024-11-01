@@ -84,17 +84,17 @@ return [
 
         'pgsql' => [
             'driver' => 'pgsql',
-            'url' => env('DB_URL'),
-            'host' => env('DB_HOST', '127.0.0.1'),
+            'url' => env('POSTGRES_URL'),
+            'host' => env('POSTGRES_HOST', 'ep-flat-moon-a4tz468g-pooler.us-east-1.aws.neon.tech'),
             'port' => env('DB_PORT', '5432'),
-            'database' => env('DB_DATABASE', 'laravel'),
-            'username' => env('DB_USERNAME', 'root'),
-            'password' => env('DB_PASSWORD', ''),
+            'database' => env('POSTGRES_DATABASE', 'verceldb'),
+            'username' => env('POSTGRES_USER', 'default'),
+            'password' => env('POSTGRES_PASSWORD', 'U2wBCOGzQsX1'),
             'charset' => env('DB_CHARSET', 'utf8'),
             'prefix' => '',
             'prefix_indexes' => true,
             'search_path' => 'public',
-            'sslmode' => 'prefer',
+            'sslmode' => 'require',
         ],
 
         'sqlsrv' => [
