@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    @vite('resources/css/app.css')
-    <link rel="stylesheet" href="css/masgong.css">
+    <link rel="stylesheet" href="css/app.css">
     <title>SimTrack Web</title>
 </head>
 <body>
@@ -14,7 +13,6 @@
             <div class="flex items-center justify-center shadow-md">
                 <img src="img/logo.png" alt="" class="h-20 w-20">
                 <h1 class="text-2xl font-bold font-serif text-green-700">ANUGRAH HADI ELECTRIC</h1>                    
-                <h2 id="masgong">MASGONG</h2>
             </div>
         </div>
     </header>
