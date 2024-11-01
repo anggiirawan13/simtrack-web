@@ -37,7 +37,9 @@ class ResiController extends Controller
                 'noResi' => '12345',
                 'kotaTujuan' => 'Jakarta',
                 'perusahaan' => 'PT. Anugrah Express',
-                'tanggalDiterima' => '2023-11-01',
+                'namaPenerima' => 'Ridho Baihaki',
+                'tanggalPengiriman' => '11/01/2024 12:00', 
+                'tanggalDiterima' => '11/01/2024 16:25',
                 'status' => 'Delivered',
             ],
             '67890' => [
@@ -55,6 +57,8 @@ class ResiController extends Controller
             'noResi' => $noResi,
             'kotaTujuan' => 'Surabaya',
             'perusahaan' => 'PT. ABC',
+            'namaPenerima' => 'Ridho Baihaki',
+            'tanggalPengiriman' => now()->format('d-m-Y'),
             'tanggalDiterima' => now()->format('d-m-Y'),
             'status' => 'In Transit',
         ];
@@ -62,3 +66,6 @@ class ResiController extends Controller
         return view('resi.show', compact('resi'));
     }
 }
+
+// app/Http/Controllers/ResiController.php
+

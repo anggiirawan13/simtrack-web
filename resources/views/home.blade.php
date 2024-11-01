@@ -9,70 +9,71 @@
 </head>
 <body>
     <header>
-        <div class="container mx-auto max-w-full py-30">
-            <div class="flex items-center justify-center shadow-md">
-                <img src="img/logo.png" alt="" class="h-20 w-20">
-                <h1 class="text-2xl font-bold font-serif text-green-700">ANUGRAH HADI ELECTRIC</h1>                    
+        <div class="container mx-auto max-w-full p-auto">
+            <div class="flex items-center justify-center space-x-4 shadow-md p-4 bg-white rounded-md">
+                <img src="img/logo.png" alt="" class="h-16 w-16 md:h-20 md:w-20">
+                <h1 class="text-xl md:text-2xl font-bold font-serif text-green-700">ANUGRAH HADI ELECTRIC</h1>                    
             </div>
         </div>
     </header>
     <section>
-        <div class="container mx-auto max-w-full py-5 px-10 flex justify-center items-center">
-            <div class="">
-                <img class="h-1/4 w-1/4 m-auto" src="img/navigation.png" alt="">
-                    <h1 class="items-center justify-center flex p-8 text-5xl font-sans font-bold text-green-700">Tracking</h1>
-                
-                <!-- Container Input Resi -->
-                <div class="border rounded-3xl shadow-md max-w-lg p-10 mx-auto">
-                    <!-- Input Resi -->
-                    <input id="resiInput" 
-                        type="text" 
-                        placeholder="Enter your receipt.." 
-                        onkeydown="addResi(event)"
-                        class="w-full py-2 text-black font-semibold rounded-md focus:outline-none">              
-
-                    <!-- Container for Resi Bubbles -->
-                    <div class="resi-container mt-4 flex flex-wrap gap-2">
-                        <!-- Resi bubbles will be added here dynamically -->
-                    </div>
+        <div class="container mx-auto max-w-full py-5 px-4 sm:px-6 lg:px-10 flex flex-col items-center">
+            <div class="flex flex-col items-center mb-8">
+                <img class="h-1/4 w-1/4 m-auto" src="img/navigation.png" alt="Navigation Icon">
+                <h1 class="flex p-4 text-3xl md:text-5xl font-sans font-bold text-green-700">Tracking</h1>
+            </div>
+    
+            <!-- Container Input Resi -->
+            <div class="border rounded-3xl shadow-md max-w-lg w-full p-6 mx-auto">
+                <!-- Input Resi -->
+                <input id="resiInput" 
+                    type="text" 
+                    placeholder="Enter your receipt.." 
+                    onkeydown="addResi(event)"
+                    class="w-full py-2 text-black font-semibold rounded-md focus:outline-none">              
+    
+                <!-- Container for Resi Bubbles -->
+                <div class="resi-container mt-4 flex flex-wrap gap-2">
+                    <!-- Resi bubbles will be added here dynamically -->
                 </div>
-
-                <!-- Search Button Outside Container -->
-                <div class="flex justify-center mt-6">
-                    <button id="searchButton" class="bg-green-700 text-white font-semibold py-2 px-4 rounded-xl hover:bg-green-800" onclick="showResiTable()">
-                        Shipment Track
-                    </button>
-                </div>
-
-                <!-- Table to display resi information -->
-                <div class="overflow-x-auto mt-8">
-                    <table id="resiTable" class="min-w-full border-collapse border border-gray-300 hidden">
-                        <thead class="bg-gray-100">
-                            <tr>
-                                <th class="border border-gray-300 px-4 py-2">No Resi</th>
-                                <th class="border border-gray-300 px-4 py-2">Kota Tujuan</th>
-                                <th class="border border-gray-300 px-4 py-2">Perusahaan</th>
-                                <th class="border border-gray-300 px-4 py-2">Tanggal Diterima</th>
-                                <th class="border border-gray-300 px-4 py-2">Status</th>
-                                <th class="border border-gray-300 px-4 py-2">Aksi</th>
-                            </tr>
-                        </thead>
-                        <tbody id="resiTableBody">
-                            <!-- Rows will be dynamically added here -->
-                        </tbody>
-                    </table>
-                </div>
+            </div>
+    
+            <!-- Search Button Outside Container -->
+            <div class="flex justify-center mt-6">
+                <button id="searchButton" class="bg-green-700 text-white font-semibold py-2 px-4 rounded-xl hover:bg-green-800 w-full sm:w-auto" onclick="showResiTable()">
+                    Shipment Track
+                </button>
+            </div>
+    
+            <!-- Table to display resi information -->
+            <div class="overflow-x-auto mt-8 w-full">
+                <table id="resiTable" class="min-w-full border-collapse border border-gray-300 hidden">
+                    <thead class="bg-gray-100">
+                        <tr>
+                            <th class="border border-gray-300 px-2 py-2 text-sm sm:text-base">No Resi</th>
+                            <th class="border border-gray-300 px-2 py-2 text-sm sm:text-base">Kota Tujuan</th>
+                            <th class="border border-gray-300 px-2 py-2 text-sm sm:text-base">Perusahaan</th>
+                            <th class="border border-gray-300 px-2 py-2 text-sm sm:text-base">Tanggal Diterima</th>
+                            <th class="border border-gray-300 px-2 py-2 text-sm sm:text-base">Status</th>
+                            <th class="border border-gray-300 px-2 py-2 text-sm sm:text-base">Aksi</th>
+                        </tr>
+                    </thead>
+                    <tbody id="resiTableBody">
+                        <!-- Rows will be dynamically added here -->
+                    </tbody>
+                </table>
             </div>
         </div>   
     </section>
+    
     <footer class="text-black py-16 mt-10 shadow-lg border">
-        <div class="container mx-auto flex justify-between items-center"> <!-- Flex container for alignment -->
-            <div class="text-center"> <!-- Centered text section -->
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center"> <!-- Flex container for alignment -->
+            <div class="text-center md:text-left w-full md:w-1/3 mb-6 md:mb-0"> <!-- Centered text section on small screens -->
                 <p class="text-lg font-semibold">Anugrah Hadi Electric</p>
                 <p class="text-sm">General Supplier Electrical</p>
     
                 <!-- Social Links -->
-                <div class="flex justify-center mt-2 space-x-4"> <!-- Space between icons -->
+                <div class="flex justify-center md:justify-start mt-2 space-x-4"> <!-- Space between icons -->
                     <a href="https://wa.me/+62 856923534834" target="_blank" class="flex items-center">
                         <img src="img/wa.png" alt="WhatsApp" class="h-6 w-6"> <!-- Adjust path -->
                         <span class="text-sm">089629625484</span>
@@ -84,10 +85,10 @@
                 </div>
             </div>
             
-            <div class="w-1/3"> <!-- Map container -->
+            <div class="w-full md:w-1/3"> <!-- Map container -->
                 <iframe 
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.397219777975!2d106.59237567603742!3d-6.211226960842041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ff8c61e3b72d%3A0xb5aa5f38db758c1f!2sPT.%20Anugrah%20Hadi%20Electric!5e0!3m2!1sen!2sid!4v1730407289234!5m2!1sen!2sid" 
-                    width="300" 
+                    width="100%" 
                     height="200" 
                     style="border:0;" 
                     allowfullscreen="" 
@@ -96,6 +97,7 @@
             </div>
         </div>
     </footer>
+    
     
     
     
@@ -142,7 +144,7 @@
                     noResi: "12345",
                     kotaTujuan: "Jakarta",
                     perusahaan: "PT. Anugrah Express",
-                    tanggalDiterima: "2023-11-01",
+                    tanggalDiterima: "11/01/2024 16:25",
                     status: "Delivered"
                 };
             }
