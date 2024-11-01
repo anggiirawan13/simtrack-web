@@ -52,7 +52,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'https://simtrack.up.railway.app/'),
+    'url' => env('APP_URL', 'https://simtrack-web.up.railway.app/'),
 
     /*
     |--------------------------------------------------------------------------
