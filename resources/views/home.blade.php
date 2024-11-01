@@ -12,7 +12,7 @@
         <div class="container mx-auto max-w-full p-auto">
             <div class="flex items-center justify-center space-x-4 shadow-md p-4 bg-white rounded-md">
                 <img src="img/logo.png" alt="" class="h-16 w-16 md:h-20 md:w-20">
-                <h1 class="text-xl md:text-2xl font-bold font-serif text-green-700">ANGGI ANJING TAI</h1>                    
+                <h1 class="text-xl md:text-2xl font-bold font-serif text-green-700">ANGGI ANJING TAI kontol</h1>                    
             </div>
         </div>
     </header>
