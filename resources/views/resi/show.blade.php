@@ -22,7 +22,6 @@
                 <p class="text-lg"><strong>Status:</strong> <span id="resiStatus" class="font-semibold">{{ $resi['status'] }}</span></p>
             </div>
 
-            <!-- Delivered Stamp -->
             <div id="deliveredStamp" class="hidden md:w-2/5 flex justify-center items-center mt-4 md:mt-0">
                 <img src="{{ asset('img/thanks.png') }}" alt="Delivered" class="w-1/2 h-auto">
             </div>
